@@ -1,5 +1,5 @@
 export default {
   mounted(el) {
-    console.log(el)
+    console.log(el);
   },
-}
+};

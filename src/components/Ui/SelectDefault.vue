@@ -1,33 +1,28 @@
 <template>
   <select v-bind="modelValue" @change="changeOption">
     <option disabled value="">Выберите из списка</option>
-    <option
-      v-for="option in options"
-      :key="option.value"
-      :value="option.value">
+    <option v-for="option in options" :key="option.value" :value="option.value">
       {{ option.name }}
     </option>
   </select>
 </template>
 <script>
 export default {
-  name: 'select-default',
+  name: "select-default",
   props: {
     modelValue: {
-      type: String
+      type: String,
     },
     options: {
       type: Array,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   methods: {
     changeOption(event) {
-      this.$emit('update:modelValue', event.target.value);
-    }
-  }
-}
+      this.$emit("update:modelValue", event.target.value);
+    },
+  },
+};
 </script>
-<style>
-  
-</style>
+<style></style>

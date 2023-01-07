@@ -5,27 +5,26 @@
   </div>
 </template>
 <script>
-
-import Navbar from '@/components/Navbar.vue';
+import Navbar from "@/components/Navbar.vue";
 
 export default {
   components: {
-    Navbar
-  }
-}
+    Navbar,
+  },
+};
 </script>
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    overflow-x: hidden;
-  }
+body {
+  overflow-x: hidden;
+}
 
-  .app {
-    padding: 20px;
-  }
+.app {
+  padding: 20px;
+}
 </style>

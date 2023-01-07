@@ -3,22 +3,22 @@
 </template>
 <script>
 export default {
-  name: 'input-default',
+  name: "input-default",
   props: {
-    modelValue: [String, Number]
+    modelValue: [String, Number],
   },
   methods: {
     updateValue(event) {
-      this.$emit('update:modelValue', event.target.value)
-    }
-  }
-}
+      this.$emit("update:modelValue", event.target.value);
+    },
+  },
+};
 </script>
 <style>
-  .input {
-    width: 100%;
-    border: 1px solid teal;
-    padding: 10px 15px;
-    margin-bottom: 15px;
-  }
+.input {
+  width: 100%;
+  border: 1px solid teal;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
 </style>

@@ -9,44 +9,41 @@
       <button-default @click="$router.push(`/posts/${post.id}`)">
         Открыть
       </button-default>
-      <button-default @click="$emit('remove', post)">
-        Удалить
-      </button-default>
+      <button-default @click="$emit('remove', post)"> Удалить </button-default>
     </div>
   </div>
 </template>
 <script>
-
 export default {
   props: {
     post: {
       type: Object,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
 <style scoped>
-  .post {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    padding: 15px;
-    border: 3px solid teal;
-  }
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 3px solid teal;
+}
 
-  .post:last-child {
-    margin-bottom: 0px;
-  }
+.post:last-child {
+  margin-bottom: 0px;
+}
 
-  .post__buttons {
-    display: flex;
-    margin-left: 20px;
-  }
+.post__buttons {
+  display: flex;
+  margin-left: 20px;
+}
 
-  .post__buttons .btn:first-child {
-    margin-right: -3px;
-  }
+.post__buttons .btn:first-child {
+  margin-right: -3px;
+}
 </style>

@@ -6,22 +6,20 @@
   </div>
 </template>
 <script>
-export default {
-  
-}
+export default {};
 </script>
 <style lang="css" scoped>
-  .navbar {
-    display: flex;
-    align-items: center;
-    background: #212529;
-    margin-bottom: 20px;
-    padding: 20px 0px;
-  }
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #212529;
+  margin-bottom: 20px;
+  padding: 20px 0px;
+}
 
-  .navbar a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0px 20px;    
-  }
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 20px;
+}
 </style>

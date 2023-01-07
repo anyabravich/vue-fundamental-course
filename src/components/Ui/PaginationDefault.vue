@@ -1,11 +1,11 @@
 <template lang="">
   <div>
-    <button-default 
-      v-for="page in totalPages" 
+    <button-default
+      v-for="page in totalPages"
       :key="page"
       :class="{
         'pagination-btn': true,
-        'pagination-btn-current': page === currentPage
+        'pagination-btn-current': page === currentPage,
       }"
       @click="getNumberPage(page)"
     >
@@ -15,35 +15,35 @@
 </template>
 <script>
 export default {
-  name: 'pagination-default',
+  name: "pagination-default",
   props: {
     totalPages: {
-      type: Number
+      type: Number,
     },
     currentPage: {
-      type: Number
+      type: Number,
     },
     modelValue: {
-      type: Number
-    }
+      type: Number,
+    },
   },
   methods: {
     getNumberPage(pageNumber) {
-      this.$emit('update', pageNumber);
-    }
-  }
-}
+      this.$emit("update", pageNumber);
+    },
+  },
+};
 </script>
 <style lang="css" scoped>
-  .pagination-btn {
-    margin-right: 15px;
-  }
+.pagination-btn {
+  margin-right: 15px;
+}
 
-  .pagination-btn:last-child {
-    margin-right: 0;
-  }
-  .pagination-btn-current {
-    color: #fff;
-    background: teal;
-  }
+.pagination-btn:last-child {
+  margin-right: 0;
+}
+.pagination-btn-current {
+  color: #fff;
+  background: teal;
+}
 </style>
