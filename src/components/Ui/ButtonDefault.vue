@@ -13,7 +13,6 @@ export default {
   padding: 10px 15px;
   color: teal;
   border: 3px solid teal;
-  /* border-radius: 5px; */
   background: transparent;
   font-weight: 700;
   transition: color 100ms linear;
